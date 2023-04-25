@@ -1,63 +1,66 @@
-const authorsData = [
+const playerData = [
     {
-      img: 'Images/authors/epictetus.jpg',
-      name: 'Epictetus',
-      studies: 'Greek Stoic philosopher',
-      resume: 'He was born into slavery at Hierapolis, Phrygia (present-day Pamukkale, in western Turkey) and lived in Rome until his banishment, when he went to Nicopolis in northwestern Greece for the rest of his life. His teachings were written down and published by his pupil Arrian in his Discourses and Enchiridion.',
+      img: './Images/Players/best.jpg',
+      name: 'Lionel Messi',
+      title: 'Best Player of the Tournament',
+      resume: 'Lionel Messi, who is considered one of the greatest football players of all time, represented Argentina in the FIFA World Cup 2022. He led his team with the hope of securing victory and adding to his impressive list of accolades.',
     },
     {
-      img: 'Images/authors/seneca.jpg',
-      name: 'Seneca',
-      studies: 'Stoic philosopher of Ancient Rome',
-      resume: 'Seneca was born in Córdoba in Hispania, and raised in Rome, where he was trained in rhetoric and philosophy.',
+      img: 'Images/Players/keaper.jpg',
+      name: 'Emiliano Martínez',
+      title: 'Best goalkeeper of the tournament',
+      resume: 'Emiliano Martínez, the goalkeeper for Argentina in the FIFA World Cup 2022, played an instrumental role in helping his team win the tournament, making crucial saves throughout the competition and solidifying his position as one of the best goalkeepers in the world.',
     },
     {
-      img: 'Images/authors/marcus.jpg',
-      name: 'Marcus Aurelius Antoninus',
-      studies: 'Roman emperor from 161 to 180 AD and a Stoic philosopher.',
-      resume: '"meditations" are a significant source of the modern understanding of ancient Stoic philosophy. These writings have been praised by fellow writers, philosophers, monarchs, and politicians centuries after his death.',
-    },
+        img: 'Images/Players/goalsoccer.jpg',
+        name: 'Kylian Mbappé',
+        title: 'Best goal soccer of the tournament',
+        resume: 'Kylian Mbappé, the rising French football superstar, played a crucial role in France journey to the FIFA World Cup 2022, showcasing his impressive speed, skill, and goal-scoring ability throughout the tournament.',
+      },
+  
+      {
+        img: 'Images/Players/best goal.jpg',
+        name: 'Richarlison de Andrade',
+        title: 'Puskas award of the tournament',
+        resume: 'Richarlison de Andrade, the Brazilian forward, scored several important goals for his team in the FIFA World Cup 2022 and was recognized for his impressive performance by winning the award for the best goal of the tournament.',
+      },
+  
+      {
+        img: 'Images/Players/oldest.jpg',
+        name: 'Alfredo Talavera',
+        title: 'The Oldest player of the tournament ',
+        resume: 'Alfredo Talavera, the Mexican goalkeeper, was the oldest player of the FIFA World Cup 2022 tournament, demonstrating his skill and experience on the field despite his age.',
+      },
+  
     {
-      img: 'Images/authors/massimo.jpg',
-      name: 'Massimo Pigliucci',
-      studies: 'Professor of Philosophy at the City College of New York',
-      resume: 'Pigliucci was born in Monrovia, Liberia, and raised in Rome, Italy.He has a doctorate in genetics from the University of Ferrara, Italy, a PhD in biology from the University of Connecticut, and a PhD in philosophy of science from the University of Tennessee.',
-    },
-    {
-      img: 'Images/authors/will.jpg',
-      name: 'William B. Irvine',
-      studies: 'Professor of Philosophy at the Wright State University (Ohio, EE. UU.). ',
-      resume: 'He became famous in many countries thanks, mainly, to the publication of two books: The art of the good life and On desire: why we want what we want.',
-    },
-    {
-      img: 'Images/authors/ryan.jpg',
-      name: 'Ryan Holiday',
-      studies: 'Author, entrepreneur',
-      resume: 'American author, modern Stoic, public-relations strategist, owner of the Painted Porch Bookshop and host of the podcast The Daily Stoic',
+      img: 'Images/Players/youngest.jpg',
+      name: 'Pablo Gavi',
+      title: 'The Youngest goal soccer of the tournament',
+      resume: 'Pablo Gavi, the Spanish midfielder, was the youngest goal scorer of the FIFA World Cup 2022 tournament, displaying his impressive talent and potential at a young age.'
     },
   ];
   
-  const authorsGrid = document.querySelectorAll('.authors-section-grid-item');
+  const playerGrid = document.querySelectorAll('.player-section-grid-item');
   
-  function authorsConstructor(element, counter) {
+  function playerConstructor(element, counter) {
     element.forEach((author) => {
       author.innerHTML = ` 
-      <div class= 'authors-section-grid-item-imgholder'>
-        <img class='authors-chess' src='Images/authors/chess.jpg'>
-        <div class='authors-img' style="background-image: url('${authorsData[counter].img}');"></div>
+      <div class= 'player-section-grid-item-imgholder'>
+        <img class='player-chess' src='./Images/Players/chess.jpg'>
+        <div class='player-img' style="background-image: url('${playerData[counter].img}');"></div>
       </div>
-      <div class= 'authors-section-grid-item-divtext'>
-        <h3 class= 'authors-section-grid-item-divtext-h3'>${authorsData[counter].name}</h3>
-        <span class= 'authors-section-grid-item-divtext-span'>${authorsData[counter].studies}</span>
-        <hr class='authors-section-grid-item-divtext-hr'>
-        <span class= 'authors-section-grid-item-divtext-span2'>${authorsData[counter].resume}</span>
+      <div class= 'player-section-grid-item-divtext'>
+        <h3 class= 'player-section-grid-item-divtext-h3'>${playerData[counter].name}</h3>
+        <span class= 'player-section-grid-item-divtext-span'>${playerData[counter].title}</span>
+        <hr class='player-section-grid-item-divtext-hr'>
+        <span class= 'player-section-grid-item-divtext-span2'>${playerData[counter].resume}</span>
       </div> 
       `;
       counter += 1;
     });
   }
   
-  authorsConstructor(authorsGrid, 0);
+  playerConstructor(playerGrid, 0);
   
   const modal = document.getElementById('modal');
   const closeBtn = document.querySelector('.modal-close');
@@ -83,7 +86,7 @@ const authorsData = [
   const showLessBtn = document.querySelector('.show-less');
   const showMoreBtn = document.querySelector('.show-more');
   const toHideShow = document.querySelectorAll('.tohide');
-  const authorSection = document.getElementById('authors-section');
+  const playerection = document.getElementById('player-section');
   
   showLessArrow.addEventListener('click', () => {
     showMoreBtn.classList.remove('hide');
@@ -91,7 +94,7 @@ const authorsData = [
     toHideShow.forEach((element) => {
       element.classList.add('hide');
     });
-    authorSection.style.height = '600px';
+    playerection.style.height = '600px';
   });
   
   showMoreArrow.addEventListener('click', () => {
@@ -100,7 +103,7 @@ const authorsData = [
     toHideShow.forEach((element) => {
       element.classList.remove('hide');
     });
-    authorSection.style.height = '250vh';
+    playerection.style.height = '250vh';
   });
   
   window.addEventListener('load', () => {
@@ -110,7 +113,7 @@ const authorsData = [
       toHideShow.forEach((element) => {
         element.classList.add('hide');
       });
-      authorSection.style.height = '600px';
+      playerection.style.height = '600px';
     }
   });
   

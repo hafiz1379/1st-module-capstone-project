@@ -91,7 +91,7 @@ const showMoreArrow = document.querySelector('.show-more-arrow');
 const showLessBtn = document.querySelector('.show-less');
 const showMoreBtn = document.querySelector('.show-more');
 const toHideShow = document.querySelectorAll('.tohide');
-const authorSection = document.getElementById('authors-section');
+const playerSection = document.getElementById('player-section');
 
 showLessArrow.addEventListener('click', () => {
   showMoreBtn.classList.remove('hide');
@@ -99,7 +99,7 @@ showLessArrow.addEventListener('click', () => {
   toHideShow.forEach((element) => {
     element.classList.add('hide');
   });
-  authorSection.style.height = '600px';
+  playerSection.style.height = '900px';
 });
 
 showMoreArrow.addEventListener('click', () => {
@@ -108,7 +108,7 @@ showMoreArrow.addEventListener('click', () => {
   toHideShow.forEach((element) => {
     element.classList.remove('hide');
   });
-  authorSection.style.height = '250vh';
+  playerSection.style.height = '250vh';
 });
 
 window.addEventListener('load', () => {
@@ -118,6 +118,6 @@ window.addEventListener('load', () => {
     toHideShow.forEach((element) => {
       element.classList.add('hide');
     });
-    authorSection.style.height = '600px';
+    playerSection.style.height = '600px';
   }
 });

@@ -49,6 +49,18 @@
     top: 3px;
     left: 10px;
   }
+
+  .nav-bar-div1-li :hover {
+    color: var(--orange-color)
+  }
+
+  .nav-il :hover {
+    color: var(--orange-color);
+  }
+
+ #whole:hover {
+    color: var(--orange-color);
+  }
   
   .modal {
     width: 100%;
@@ -67,8 +79,8 @@
   
   .modal-close {
     position: relative;
-    top: 10px;
-    left: 15px;
+    top: 25px;
+    left: 35px;
     width: 50px;
     height: 50px;
   }
@@ -203,8 +215,8 @@
   
   #player-section {
     width: 100%;
-    height: 250vh;
-    max-height: 1624px;
+    min-height: 100vh;
+    max-height: 1670px;
     background: #fff;
     padding-top: 10px;
   }
@@ -547,7 +559,7 @@
       background: #fff;
       margin: 0;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       z-index: 4;
     }
   
@@ -562,7 +574,7 @@
     .nav-ul {
       display: flex;
       list-style: none;
-      gap: 20px;
+      gap: 30px;
       align-items: center;
       margin: 0;
       padding: 0;
@@ -621,7 +633,8 @@
     }
   
     #home-section-span-date {
-      font-size: 2.7rem;
+      font-size: 2.5rem;
+      font-weight: 900;
     }
   
     .home-section-span2 {
@@ -673,6 +686,7 @@
       text-decoration: underline;
       display: block;
       cursor: pointer;
+      word-spacing: 4px;
     }
   
     .section-hr {

@@ -374,7 +374,7 @@
   .past-events-img-container {
     width: 80%;
     height: 200px;
-    background-image: linear-gradient(rgba(179, 43, 33, 0.6), rgba(179, 43, 33, 0.6)), url(Images/Cup.jpg);
+    background-image: linear-gradient(rgba(179, 43, 33, 0.6), rgba(179, 43, 33, 0.6)), url(Images/France.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -390,7 +390,7 @@
   .past-events-img-container2 {
     width: 80%;
     height: 200px;
-    background-image: linear-gradient(rgba(179, 43, 33, 0.6), rgba(179, 43, 33, 0.6)), url(Images/winner\ team.jpg);
+    background-image: linear-gradient(rgba(179, 43, 33, 0.6), rgba(179, 43, 33, 0.6)), url(Images/Germany.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -447,7 +447,7 @@
     width: 100%;
     height: 150px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
   }
@@ -458,12 +458,13 @@
     background-image: url(Images/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
+    margin-left: 14%;
   }
   
   .footer-p {
     font-size: 0.8rem;
     color: var(--dark-color);
-    text-align: center;
+    text-align: left;
     height: 40px;
   }
   
@@ -707,7 +708,7 @@
     }
   
     .partners-ul {
-      column-gap: 75px;
+      column-gap: 5%;
     }
   
     .section-main-about {

@@ -201,7 +201,7 @@
     margin-bottom: 40px;
   }
   
-  #authors-section {
+  #player-section {
     width: 100%;
     height: 250vh;
     max-height: 1624px;
@@ -209,13 +209,13 @@
     padding-top: 10px;
   }
   
-  .authors-section-h2 {
+  .player-section-h2 {
     text-align: center;
     color: var(--dark-color);
     margin: 0;
   }
   
-  #authors-section-grid {
+  #player-section-grid {
     display: grid;
     width: 100%;
     height: auto;
@@ -225,20 +225,20 @@
     gap: 20px;
   }
   
-  .authors-section-grid-item {
+  .player-section-grid-item {
     display: flex;
     width: 90%;
     margin: 0 auto;
     gap: 20px;
   }
   
-  .authors-section-grid-item-imgholder {
+  .player-section-grid-item-imgholder {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .authors-chess {
+  .player-chess {
     width: 55px;
     height: 58px;
     position: relative;
@@ -246,7 +246,7 @@
     top: -45px;
   }
   
-  .authors-img {
+  .player-img {
     width: 100px;
     height: 120px;
     background-size: cover;
@@ -256,29 +256,29 @@
     top: -2px;
   }
   
-  .authors-section-grid-item-divtext {
+  .player-section-grid-item-divtext {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
   
-  .authors-section-grid-item-divtext-h3 {
+  .player-section-grid-item-divtext-h3 {
     font-weight: bold;
     font-size: 1.2rem;
     color: var(--dark-color);
   }
   
-  .authors-section-grid-item-divtext-span {
+  .player-section-grid-item-divtext-span {
     color: var(--orange-color);
     font-size: 1rem;
   }
   
-  .authors-section-grid-item-divtext-hr {
+  .player-section-grid-item-divtext-hr {
     width: 35px;
     margin: 10px 0;
   }
   
-  .authors-section-grid-item-divtext-span2 {
+  .player-section-grid-item-divtext-span2 {
     font-size: 0.8rem;
   }
   
@@ -299,7 +299,7 @@
     transform: rotate(180deg);
   }
   
-  .authors-btn {
+  .player-btn {
     position: relative;
     width: 90%;
     height: 50px;
@@ -678,14 +678,14 @@
       width: 50px;
     }
   
-    #authors-section {
+    #player-section {
       padding-top: 40px;
       height: 860px;
       max-height: none;
       background-color: var(--light-color);
     }
   
-    #authors-section-grid {
+    #player-section-grid {
       grid-template-rows: 250px 250px 250px;
       grid-template-columns: 1fr 1fr;
       max-height: none;

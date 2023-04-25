@@ -62,58 +62,62 @@ const playerData = [
   
   playerConstructor(playerGrid, 0);
   
-  const modal = document.getElementById('modal');
-  const closeBtn = document.querySelector('.modal-close');
-  const hamburBtn = document.querySelector('.menu-h');
-  const ilMenu = document.querySelectorAll('.il-modal');
   
-  closeBtn.addEventListener('click', () => {
+const modal = document.getElementById('modal');
+const closeBtn = document.querySelector('.modal-close');
+const hamburBtn = document.querySelector('.menu-h');
+const ilMenu = document.querySelectorAll('.il-modal');
+
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    hamburBtn.style.display = 'block';
+    logo.style.display = 'block';
+});
+
+hamburBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+    hamburBtn.style.display = 'none';
+    closeBtn.style.display = 'block';
+});
+
+ilMenu.forEach((il) => {
+  il.addEventListener('click', () => {
     modal.classList.remove('show');
   });
-  
-  hamburBtn.addEventListener('click', () => {
-    modal.classList.add('show');
+});
+
+const showLessArrow = document.querySelector('.show-less-arrow');
+const showMoreArrow = document.querySelector('.show-more-arrow');
+const showLessBtn = document.querySelector('.show-less');
+const showMoreBtn = document.querySelector('.show-more');
+const toHideShow = document.querySelectorAll('.tohide');
+const authorSection = document.getElementById('authors-section');
+
+showLessArrow.addEventListener('click', () => {
+  showMoreBtn.classList.remove('hide');
+  showLessBtn.classList.add('hide');
+  toHideShow.forEach((element) => {
+    element.classList.add('hide');
   });
-  
-  ilMenu.forEach((il) => {
-    il.addEventListener('click', () => {
-      modal.classList.remove('show');
-    });
+  authorSection.style.height = '600px';
+});
+
+showMoreArrow.addEventListener('click', () => {
+  showLessBtn.classList.remove('hide');
+  showMoreBtn.classList.add('hide');
+  toHideShow.forEach((element) => {
+    element.classList.remove('hide');
   });
-  
-  const showLessArrow = document.querySelector('.show-less-arrow');
-  const showMoreArrow = document.querySelector('.show-more-arrow');
-  const showLessBtn = document.querySelector('.show-less');
-  const showMoreBtn = document.querySelector('.show-more');
-  const toHideShow = document.querySelectorAll('.tohide');
-  const playerection = document.getElementById('player-section');
-  
-  showLessArrow.addEventListener('click', () => {
+  authorSection.style.height = '250vh';
+});
+
+window.addEventListener('load', () => {
+  if (window.matchMedia('(max-width: 768px)').matches) {
     showMoreBtn.classList.remove('hide');
     showLessBtn.classList.add('hide');
     toHideShow.forEach((element) => {
       element.classList.add('hide');
     });
-    playerection.style.height = '600px';
-  });
-  
-  showMoreArrow.addEventListener('click', () => {
-    showLessBtn.classList.remove('hide');
-    showMoreBtn.classList.add('hide');
-    toHideShow.forEach((element) => {
-      element.classList.remove('hide');
-    });
-    playerection.style.height = '250vh';
-  });
-  
-  window.addEventListener('load', () => {
-    if (window.matchMedia('(max-width: 768px)').matches) {
-      showMoreBtn.classList.remove('hide');
-      showLessBtn.classList.add('hide');
-      toHideShow.forEach((element) => {
-        element.classList.add('hide');
-      });
-      playerection.style.height = '600px';
-    }
-  });
-  
+    authorSection.style.height = '600px';
+  }
+});

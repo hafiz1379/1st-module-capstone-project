@@ -139,7 +139,9 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Hafizullah Rasa
+Hafizullah Rasa
+
+👤 **Hafizullah Rasa**
 
 - GitHub: [@githubhandle](https://github.com/hafiz1379)
 - Twitter: [@twitterhandle](https://twitter.com/Hafizrasa1379?s=35)
@@ -179,6 +181,12 @@ If you like this project just give it a star.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse to have this opportunity, and also thank you the code review team. 
+
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+
+The original design is under [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/).
+
+Multimedia and content changes were made in this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

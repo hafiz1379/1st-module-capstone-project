@@ -553,9 +553,9 @@
     .nav-logo {
       width: 175px;
       height: 100px;
-      background-image: url();
+      background-image: url(Images/logo.png);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
     }
   
     .nav-ul {

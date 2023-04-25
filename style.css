@@ -337,7 +337,7 @@ html {
   color: var(--dark-color);
   font-size: 1rem;
   margin-bottom: 50px;
-  height: 123px;
+  height: fit-content;
   display: flex;
   align-items: center;
 }

@@ -229,7 +229,6 @@
     display: flex;
     width: 90%;
     margin: 0 auto;
-    gap: 20px;
   }
   
   .player-section-grid-item-imgholder {
@@ -375,7 +374,7 @@
   .past-events-img-container {
     width: 80%;
     height: 200px;
-    background-image: linear-gradient(rgba(179, 43, 33, 0.6), rgba(179, 43, 33, 0.6)), url();
+    background-image: linear-gradient(rgba(179, 43, 33, 0.6), rgba(179, 43, 33, 0.6)), url(Images/Cup.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -391,7 +390,7 @@
   .past-events-img-container2 {
     width: 80%;
     height: 200px;
-    background-image: linear-gradient(rgba(179, 43, 33, 0.6), rgba(179, 43, 33, 0.6)), url();
+    background-image: linear-gradient(rgba(179, 43, 33, 0.6), rgba(179, 43, 33, 0.6)), url(Images/winner\ team.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -456,9 +455,9 @@
   .footer-logo {
     width: 175px;
     height: 100px;
-    background-image: url();
+    background-image: url(Images/logo.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
   
   .footer-p {
@@ -756,7 +755,7 @@
     }
   
     .logo-2 {
-      background-image: url();
+      background-image: url(Images/logo.png);
     }
   
     .about-footer {

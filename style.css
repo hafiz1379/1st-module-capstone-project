@@ -66,7 +66,7 @@ html {
   width: 100%;
   height: 100%;
   position: fixed;
-  background: linear-gradient(rgba(184, 97, 17, 1), rgba(39, 42, 49, 1));
+  background-color: var(--light-color);
   color: #fff;
   top: 0;
   display: none;
@@ -79,10 +79,10 @@ html {
 
 .modal-close {
   position: relative;
-  top: 25px;
-  left: 35px;
-  width: 50px;
-  height: 50px;
+  top: 35px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
 }
 
 .ul-modal {
@@ -97,7 +97,7 @@ html {
 
 .il-modal > a {
   text-decoration: none;
-  color: var(--light-color);
+  color: var(--dark-color);
   font-size: 2rem;
 }
 
@@ -127,6 +127,12 @@ html {
   font-size: 40px;
   background: linear-gradient(120deg, rgba(184, 97, 17, 0.9), rgba(184, 97, 17, 0.3));
   -webkit-background-clip: text;
+}
+
+.about-section-h1 {
+  color: transparent;
+  background: var(--orange-color);
+ -webkit-background-clip: text;
 }
 
 .home-section-div {
@@ -499,10 +505,7 @@ html {
   }
 
   .mobile {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
+    margin-bottom: -48px;
     display: none;
   }
 
@@ -657,7 +660,7 @@ html {
     flex-direction: column;
     justify-content: center;
     max-width: 200px;
-    height: 250px;
+    height: 210px;
     align-items: center;
     margin: 0;
     padding: 15px;
@@ -672,11 +675,14 @@ html {
   .program-section-h3 {
     flex: 1;
     height: 10px;
+    margin: -15px;
   }
 
   .program-section-p {
     flex: 1;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 
   .program-section-a {

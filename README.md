@@ -75,7 +75,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 This is the [live demo link](https://hafiz1379.github.io/1st-module-capstone-project/)
-In this [video](https://www.loom.com/share/7bb5f001a0a2431da2097f6843c7929b) I share a live view of my project while also talking about the creation
+In this [video](https://www.loom.com/share/47771c14f0d84ed7b9f5ec8c554d2b2d) I share a live view of my project while also talking about the creation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

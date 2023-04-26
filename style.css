@@ -132,7 +132,7 @@ html {
 .about-section-h1 {
   color: transparent;
   background: var(--orange-color);
-   -webkit-background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .home-section-div {

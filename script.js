@@ -97,7 +97,7 @@ showLessArrow.addEventListener('click', () => {
   toHideShow.forEach((element) => {
     element.classList.add('hide');
   });
-  playerSection.style.height = '900px';
+  playerSection.style.height = '600px';
 });
 
 showMoreArrow.addEventListener('click', () => {
@@ -106,7 +106,7 @@ showMoreArrow.addEventListener('click', () => {
   toHideShow.forEach((element) => {
     element.classList.remove('hide');
   });
-  playerSection.style.height = '250vh';
+  playerSection.style.height = '1400px';
 });
 
 window.addEventListener('load', () => {

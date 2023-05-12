@@ -782,10 +782,10 @@ html {
   }
 
   .footer-2 {
-    background: var(--dark-color) !important;
+    background: var(--light-color);
   }
 
   .footer-p2 {
-    color: var(--light-color);
+    color: var(--dark-color);
   }
 }

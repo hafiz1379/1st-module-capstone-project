@@ -104,7 +104,7 @@ html {
   margin-top: 8rem;
   padding: 20px;
   width: 100%;
-  height: 80vh;
+  height: fit-content;
 }
 
 .home-section-span {
@@ -610,7 +610,7 @@ html {
     margin-top: 15%;
     padding-left: 20vw;
     padding-right: 10vw;
-    height: 110vh;
+    height: fit-content;
   }
 
   #home-section-span-title {

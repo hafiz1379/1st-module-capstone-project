@@ -125,13 +125,13 @@ html {
   color: transparent;
   font-size: 40px;
   background: linear-gradient(120deg, rgba(184, 97, 17, 0.9), rgba(184, 97, 17, 0.3));
-  -webkit-background-clip: text;
+   -webkit-background-clip: text;
 }
 
 .about-section-h1 {
   color: transparent;
   background: var(--orange-color);
-  -webkit-background-clip: text;
+-webkit-background-clip: text;
 }
 
 .home-section-div {
@@ -383,7 +383,7 @@ html {
 .past-events {
   border-top: 1px solid var(--light-color);
   width: 100%;
-  height: 550px;
+  height: 400px;
   text-align: center;
   background: #fff;
 }
@@ -625,7 +625,7 @@ html {
   .home-section-div {
     max-width: 700px;
     padding: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     border: 3px solid #fff;
   }
 
@@ -741,6 +741,7 @@ html {
 
   .h1-about {
     font-size: 4rem;
+    margin-top: 0;
   }
 
   .logo-section {

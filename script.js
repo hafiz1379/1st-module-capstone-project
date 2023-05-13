@@ -106,7 +106,7 @@ showMoreArrow.addEventListener('click', () => {
   toHideShow.forEach((element) => {
     element.classList.remove('hide');
   });
-  playerSection.style.height = '1400px';
+  playerSection.style.height = '1900px';
 });
 
 window.addEventListener('load', () => {

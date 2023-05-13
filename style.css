@@ -221,7 +221,7 @@ html {
 #player-section {
   width: 100%;
   min-height: 100vh;
-  max-height: 1670px;
+  max-height: fit-content;
   background: #fff;
   padding-top: 10px;
 }
